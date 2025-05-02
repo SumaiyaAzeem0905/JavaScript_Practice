@@ -1,9 +1,13 @@
-//var a=500
-let c=900 
+var a=500 
 const b=2000 
+let c=900
+console.log(a); // 500
+console.log(b); // 2000 
+console.log(c); // 900
+
 if(true){
     let c=1000 // let is block scoped and not hoisted
-    const b=2000 // const is block scoped and not hoisted
+    const b=2000  // const is block scoped and not hoisted
     var a=3000 // var is function scoped and hoisted
     console.log("Inside if block:",a); // prints 3000
     

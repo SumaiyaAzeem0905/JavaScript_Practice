@@ -16,7 +16,7 @@ const employee={
 
 const obj1={1:"a", 2:"b"}
 const obj2={3:"c", 4:"d"}
-const obj3=Object.assign(obj1,obj2) //assigns the values of obj2 to obj1 and returns obj1
+const obj3=Object.assign(obj1,obj2) //assigns the values of obj2 to obj1 and returns obj3
 const obj4={...obj1,...obj2} //spread operator to merge objects and return a new object
 console.log(obj4); //{1: "a", 2: "b", 3: "c", 4: "d"}
 

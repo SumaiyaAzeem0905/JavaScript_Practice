@@ -17,7 +17,7 @@ console.log(user["city"]); //Hyderabad
 console.log(user[mySymbol]); //key
 console.log(typeof user[mySymbol]); //symbol
 
-user.email="sample@google.com"
+user.email="sample@gl.com"
 Object.freeze(user)     // freeze the object so that it cannot be changed
 console.log(user); 
 user.email="example@ab.com"

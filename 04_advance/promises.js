@@ -1,4 +1,5 @@
 const promiseOne=new Promise(function(resolve, reject){  
+    // promise-> Evntual completion of an async task
     //Do an async task
     //DB calls, cryptography,network
     //This is a function which takes two parameters resolve and reject
@@ -10,7 +11,7 @@ const promiseOne=new Promise(function(resolve, reject){
     },1000)  
 })
 promiseOne.then(function(){
-    console.log("promise consumed");     
+    console.log("promise consumed");      
     })     
 
 

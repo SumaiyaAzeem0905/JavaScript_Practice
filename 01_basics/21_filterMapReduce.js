@@ -31,7 +31,7 @@ const books=[
 ]
 
 
-//map
+//map   =>it creates a new array populated with the results of calling a provided function on every element in the calling array. It does not change the original array.
 const userBooks=books.filter( (book)=> book.genre==='fiction')
 console.log(userBooks); // [ { title: 'book1', genre: 'fiction', rating: 4.5 }, { title: 'book3', genre: 'fiction', rating: 4 }, { title: 'book5', genre: 'fiction', rating: 2.5 }, { title: 'book7', genre: 'fiction', rating: 3 } ]
 
@@ -43,9 +43,9 @@ console.log(newNums); // [ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
 
 //chaining filter and map
 const Nums2=[1,2,3,4,5,6,7,8,9,10]
-const newNums2=Nums2.map((num)=>num*10)
-                    .map((num)=>num+10)
-                    .filter((num)=>num>50)
+const newNums2=Nums2.map((num)=>num*10) // [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
+                    .map((num)=>num+10) // [ 20, 30, 40, 50, 60, 70, 80, 90, 100, 110 ]
+                    .filter((num)=>num>50) // [ 60, 70, 80, 90, 100, 110 ]
 console.log(newNums2); 
 
 

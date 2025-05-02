@@ -33,7 +33,10 @@
     //clientX,clientY,screenX,screenY
     //altKey,ctrlKey,shiftkey,keyCode
 
-    
+    //Event Propogation->Bubbling and Capturing
+    //Bubbling->Event starts from the target element and then goes up to the parent elements
+    //Capturing->Event starts from the parent elements and then goes down to the target element
+
     // document.getElementById("owl").addEventListener('click', function(e){
     //     console.log(e);
     //     e.stopPropagation()
@@ -45,14 +48,17 @@
 
     // },false)
 
+    //preventDefault() method prevents the default action of the event from happening.
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
     // },false)
 
    document.querySelector('#images').addEventListener('click',function(e){
-    console.log(e.target.parentNode);
-    let remoeIt=e.target.parentNode
-    //remoeIt.remove()
+    //    console.log(e.target); //target is the element that triggered the event
+    if(e.target.tagName==="IMG"){
+        let removeIt=e.target.parentNode
+        removeIt.remove()
+    }
     
    })
      

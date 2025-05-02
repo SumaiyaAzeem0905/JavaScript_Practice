@@ -1,12 +1,12 @@
 let myDate=new Date()
-// console.log(myDate); 
-// console.log(typeof myDate); 
+console.log(myDate);  //current date and time in UTC format
+console.log(typeof myDate);  // object=>Date object
 
-// console.log(myDate.toString()); 
-// console.log(myDate.toDateString());  
-// console.log(myDate.toISOString());
-// console.log(myDate.toJSON()); 
-// console.log(myDate.toLocaleDateString());
+console.log(myDate.toString());   
+console.log(myDate.toDateString());   
+console.log(myDate.toISOString()); 
+console.log(myDate.toJSON());          
+console.log(myDate.toLocaleDateString());          
 
 
 

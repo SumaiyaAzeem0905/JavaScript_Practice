@@ -14,16 +14,16 @@
 </body>
 <script>
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', requestUrl)
-    xhr.onreadystatechange = function(){
-        console.log(xhr.readyState);
-        if (xhr.readyState === 4) {
-            const data = JSON.parse(this.responseText)
-            console.log(typeof data);
-            console.log(data.followers);
+    const xhr = new XMLHttpRequest(); // Create a new XMLHttpRequest object
+    xhr.open('GET', requestUrl) // Initialize it: GET-request for the URL
+    xhr.onreadystatechange = function(){ // Call a function when the state changes.
+        console.log(xhr.readyState); // 0,1,2,3,4
+        if (xhr.readyState === 4) { // If request is complete
+            const data = JSON.parse(this.responseText) // Parse the JSON response
+            console.log(typeof data); // object
+            console.log(data.followers); // 0
         }
     }
-    xhr.send();
+    xhr.send(); // Send the request
 </script>
 </html>

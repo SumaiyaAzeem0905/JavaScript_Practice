@@ -40,9 +40,9 @@ for (let index = 0; index < 20; index++) {
 
    for (let index = 0; index < 20; index++) {
     if(index === 5) {
-        continue; // exit the loop when index is 10
+        continue; // skip the current iteration when index is 10
     }
-    console.log(index); // prints numbers from 0 to 9
+    console.log(index); // prints numbers from 0 to 19 except 5
    }
 
 
